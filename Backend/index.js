@@ -52,7 +52,7 @@ app.post("/register", (req, res) => {
 });
 
 // **New API to retrieve all employees**
-app.get("/getEmployees", (req, res) => {
+app.get("/", (req, res) => {
   // Fetch employees from database or another source
   EmployeeModel.find({})
       .then((employees) => {
