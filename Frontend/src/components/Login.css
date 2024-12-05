@@ -1,0 +1,164 @@
+/* Overall container for the login form */
+.auth-right {
+
+    width: 30%;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 500px;
+}
+
+/* Heading styles */
+.auth-right h2 {
+    margin-top: 15%;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Form styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input group styles */
+.auth-input-group {
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.auth-input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.auth-input-group input:focus {
+    border-color: #5bc6c6;
+}
+
+/* Remember me styles */
+.auth-remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.auth-remember-me input {
+    margin-right: 10px;
+}
+
+/* Submit button styles */
+.auth-submit-btn {
+    background-color: #5bc6c6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.auth-submit-btn:hover {
+    background-color: #48a9a9;
+}
+
+/* Google button styles */
+.auth-google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8ceeee;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.auth-google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Signup link styles */
+.auth-signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.auth-signup-link a {
+    color: #5bc6c6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .auth-right {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .auth-right h2 {
+        font-size: 24px;
+    }
+
+    .auth-input-group input {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .auth-submit-btn,
+    .auth-google-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+/* Media Query for Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .auth-right{
+        margin-top: 20%;
+    }
+    .auth-right h2 {
+        font-size: 20px;
+    }
+
+    .auth-input-group input {
+        font-size: 12px;
+    }
+
+    .auth-submit-btn,
+    .auth-google-btn {
+        font-size: 12px;
+    }
+
+    .auth-signup-link {
+        font-size: 12px;
+    }
+}

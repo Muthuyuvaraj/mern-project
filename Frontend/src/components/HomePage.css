@@ -1,0 +1,112 @@
+/* Default styles (for desktops and laptops) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #99d9d9;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content {
+    max-width: 50%;
+    margin-left: 4%;
+}
+
+.content h1 {
+    font-size: 55px;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+}
+
+.content p {
+    font-size: 18px;
+    color: #1d3557;
+    margin: 20px 0;
+    padding-bottom: 20px;
+}
+
+.content .btn {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.image {
+    max-width: 70%;
+    height: 65%;
+    margin-right: 7%;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.logo-h {
+    margin-left: -50%;
+}
+
+/* Responsive styles */
+
+/* For tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .image {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+/* For smartphones (screen width 480px and below) */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .content .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo-h {
+        margin-left: -15%;
+    }
+}

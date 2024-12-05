@@ -1,0 +1,258 @@
+/* Default styles for desktops and larger screens */
+.container- {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-panel {
+    background-color: #5bc6c6;
+    color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    border-radius: 50px;
+    margin-left: -10%;
+
+}
+
+.left-panel h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.left-panel p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.right-panel {
+    width: 30%;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    height: 550px;
+}
+
+/* Heading styles */
+.right-panel h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #28e0c1;
+    font-weight: 800;
+}
+
+/* Google signup button styles */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5bc6c6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.google-btn:hover {
+    background-color: #07fdfd;
+}
+
+.google-btn img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.google-btn h5 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Divider text (or) styles */
+.or {
+    margin: 20px 0;
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Input group styles */
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #555;
+    background: none;
+    padding: 5px;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.input-group i {
+    color: #888;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Signup button styles */
+.signup-btn {
+    background-color: #5bc6c6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.password-strength {
+    color: green;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    color: #007bff;
+}
+.password-feedback {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.password-feedback.error {
+    color: red;
+}
+
+.password-feedback.success {
+    color: green;
+}
+
+
+.signup-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+/* Tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+    .container- {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        height: auto;
+    }
+
+    .left-panel {
+        padding: 30px;
+        text-align: center;
+    }
+    .right-panel {
+        max-width: 90%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .right-panel h2 {
+        font-size: 24px;
+    }
+
+    .google-btn,
+    .signup-btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+    }
+
+    
+}
+
+/* Smartphones (screen width 480px and below) */
+@media (max-width: 480px) {
+    .left-panel h1 {
+        font-size: 28px;
+    }
+
+    .left-panel p {
+        font-size: 14px;
+    }
+    .right-panel {
+        margin: 20% auto;
+    }
+
+    .right-panel h2 {
+        font-size: 20px;
+    }
+
+    .google-btn,
+    .signup-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .or {
+        font-size: 12px;
+    }
+}
+

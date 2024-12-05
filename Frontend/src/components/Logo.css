@@ -1,0 +1,200 @@
+/* Default styles (for desktops and larger screens) */
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: #4ec3c9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo:before {
+    content: '+';
+    color: white;
+    font-size: 74px;
+    font-weight: 700;
+}
+
+/* Responsive styles */
+
+/* For tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo:before {
+        font-size: 60px;
+    }
+}
+
+/* For smartphones (screen width 480px and below) */
+@media (max-width: 480px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo:before {
+        font-size: 50px;
+    }
+}
+
+/* General styles for the login container */
+.login-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    height: auto;
+}
+
+/* Heading styles */
+.login-right h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styles */
+.login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linput-group {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.linput-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.linput-group input:focus {
+    border-color: #5bc6c6;
+    outline: none;
+    box-shadow: 0 0 5px rgba(91, 198, 198, 0.5);
+}
+
+/* Remember me checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.remember-me label {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Submit button styles */
+.submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #5bc6c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #4ca9a9;
+}
+
+/* Google button styles */
+.lgoogle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lgoogle-btn:hover {
+    background-color: #eaeaea;
+}
+
+.lgoogle-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Sign-up link */
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #5bc6c6;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+    .login-right {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .login-right h2 {
+        font-size: 24px;
+    }
+
+    .linput-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .submit-btn, .lgoogle-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .signup-link {
+        font-size: 12px;
+    }
+}

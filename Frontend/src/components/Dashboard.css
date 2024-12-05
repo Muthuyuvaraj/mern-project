@@ -1,0 +1,175 @@
+/* Base Styles */
+.dashboard-container {
+    font-family: 'Nunito', sans-serif;
+    background-color: #99d9d9;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .dashboard-main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 10%;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .dashboard-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dashboard-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  
+  .dashboard-chart {
+    margin-top: 30px;
+  }
+  
+  .dashboard-emotion-form h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-input-group label {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-input-group input[type="range"] {
+    width: 100%;
+  }
+  
+  .dashboard-slider-value {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2a9d8f;
+  }
+  
+  .dashboard-input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dashboard-submit-btn {
+    background-color: #2a9d8f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .dashboard-submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For tablets and medium-sized screens */
+  @media (max-width: 768px) {
+    .dashboard-main {
+      margin-top: 5%;
+      padding: 20px;
+    }
+  
+    .dashboard-header h2 {
+      font-size: 20px;
+    }
+  
+    .dashboard-profile img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .dashboard-input-group label {
+      font-size: 14px;
+    }
+  
+    .dashboard-submit-btn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* For mobile devices and smaller screens */
+  @media (max-width: 480px) {
+    .dashboard-container {
+        
+      padding: 10px;
+    }
+  
+    .dashboard-main {
+      padding: 15px;
+    }
+  
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+  
+    .dashboard-header h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .dashboard-profile {
+      margin-top: 10px;
+    }
+  
+    .dashboard-profile img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .dashboard-input-group label {
+      font-size: 12px;
+    }
+  
+    .dashboard-input-group input[type="range"] {
+      width: 100%;
+    }
+  
+    .dashboard-submit-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    .dashboard-slider-value {
+      font-size: 12px;
+    }
+  }
+  
