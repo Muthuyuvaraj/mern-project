@@ -10,9 +10,9 @@ const app = express();
 
 app.use(cors(
    {
-  origin:["https://frontend-tawny-three.vercel.app/"],
-  methods:['POST', 'GET'],
-  credentials: true,
+  origin: "https://frontend-tawny-three.vercel.app", // Your frontend URL
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  credentials: true, // Allow cookies or authentication headers
 }
 ));
 
