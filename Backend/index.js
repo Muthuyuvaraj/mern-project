@@ -4,6 +4,7 @@ const cors = require("cors");
 const EmployeeModel = require("./models/Employee");
 require("dotenv").config();
 const session = require("express-session");
+const chatbotRoute = require("./chatbot");
 
 const app = express();
 
@@ -66,6 +67,8 @@ app.get("/", (req, res) => {
           res.status(500).json({ error: "Failed to fetch employees" });
       });
 });
+
+app.use("/chatbot", chatbotRoute);
 
 // Start the server
 app.listen(3001, () => {
